@@ -9,18 +9,33 @@ body {
   padding-left: 100px;
   min-width: 1200px;
   height: 500px;
-  position: relative;
-  z-index: 1;
-  overflow:hidden;
+  position: absolute;
+ 
 }
+
+ul {
+  list-style:none;
+}
+
+
+.instructions{
+  color:red;
+  display: block;
+  position: absolute;
+  z-index:1;
+  top: 22px;
+  margin-left:600px;
+ 
+}
+
 
 .ryu{
 	float:left;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu, .ryu-cool {
-  width: 659px;
-  height: 494px;
+  width: 500px;
+  height: 495px;
 }
 
 .ryu-ready, .ryu-throwing, .ryu-cool {

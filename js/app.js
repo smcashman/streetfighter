@@ -39,6 +39,15 @@ $('.ryu').mouseenter(function() {
   		$(".ryu-still, .ryu-ready").hide();
   		$(".ryu-cool").show();
   	}
+  });
+
+	$(document).keyup(function() {
+		$(".ryu-ready, .ryu-cool").hide();
+		$(".ryu-still").show();
 	});
+  
+	
+  	
+
 
 });
