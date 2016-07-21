@@ -5,6 +5,12 @@ function playHadouken () {
   	$('#hadouken-sound')[0].play();
 }
 
+function playCool () {
+	$("#cool-song")[0].volume=0.5;
+	$("#cool-song")[0].load();
+	$("#cool-song")[0].play();
+}
+
 $(document).ready(function(){
 
 $('.ryu').mouseenter(function() {
@@ -35,7 +41,8 @@ $('.ryu').mouseenter(function() {
 	});
 
 	$(document).keydown(function(e) {
-  	if (e.which==88){
+  	if (e.which==88) {
+  		playCool();
   		$(".ryu-still, .ryu-ready").hide();
   		$(".ryu-cool").show();
   	}
