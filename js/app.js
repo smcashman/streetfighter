@@ -7,7 +7,7 @@ function playHadouken () {
 
 function playCool () {
 	$("#cool-song")[0].volume=0.5;
-	$("#cool-song")[0].load();
+	//$("#cool-song")[0].load();
 	$("#cool-song")[0].play();
 }
 
@@ -49,12 +49,11 @@ $('.ryu').mouseenter(function() {
   });
 
 	$(document).keyup(function() {
+		$("#cool-song")[0].pause();
+		$("#cool-song")[0].load();
 		$(".ryu-ready, .ryu-cool").hide();
 		$(".ryu-still").show();
 	});
   
 	
-  	
-
-
 });
